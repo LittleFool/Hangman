@@ -12,7 +12,6 @@ int main(int argc, const char* argv[]) {
 		solution += "_";
 	}
 
-
 	while (tries > 0 && solution != word) {
 		char guess = '_';
 		bool guessIsCorrect = false;
@@ -35,7 +34,7 @@ int main(int argc, const char* argv[]) {
 		}
 	}
 
-	cout << "You guess correctly! The word is " + word << endl;
+	cout << "You guessed correctly! The word is " + word << endl;
 
 	return 0;
 }
