@@ -5,8 +5,12 @@ using namespace std;
 
 int main(int argc, const char* argv[]) {
 	string word = "hangman";
-	string solution = "_______";
+	string solution = "";
 	int tries = 10;
+
+	for (int i = 0; i < word.length(); i++) {
+		solution += "_";
+	}
 
 
 	while (tries > 0 && solution != word) {
